@@ -1,0 +1,55 @@
+<section [class]="Viewport">
+
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<h2>Here are some links to help you start: </h2>
+<demo [title]="title" (selected)="selectedFn($event)"></demo>
+<child></child>
+<span class="badge badge-purple">15</span>
+<span class="badge badge-blue">2</span>
+<span class="badge badge-orange">3</span>
+<span class="badge badge-light-blue">12</span>
+<span class="badge badge-1">90</span>
+<span class="badge badge-2">51</span>
+<span class="badge badge-3">25</span>
+<span class="badge badge-4">32</span>
+<span class="badge badge-5">57</span>
+<button class="btn btn-primary">Primary</button>
+<button class="btn btn-success">Success</button>
+<button class="btn btn-warning">Warning</button>
+<button class="btn btn-danger">Danger</button>
+<button class="btn btn-danger" disabled>Disabled</button>
+<form clrForm>
+  <input clrInput placeholder="My input" name="input"  />
+</form>
+<div class="clr-form-control">
+  <label for="select-error" class="clr-control-label">Basic select</label>
+  <div class="clr-control-container clr-error">
+    <div class="clr-select-wrapper">
+      <select id="select-error" class="clr-select">
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <clr-icon class="clr-validate-icon" shape="exclamation-circle"></clr-icon>
+    </div>
+    <span class="clr-subtext">Error message</span>
+  </div>
+</div>
+<ul>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
+  </li>
+  <li>
+    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
+  </li>
+</ul>
+<router-outlet></router-outlet>
+</section>
