@@ -8,7 +8,7 @@ import {BreakpointObserver, Breakpoints , MediaMatcher} from '@angular/cdk/layou
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'BIPtest';
+  title = 'BIPtestw';
 
   public Viewport : string = '';
   
